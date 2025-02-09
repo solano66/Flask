@@ -1,2 +1,23 @@
 <!-- practice start -->
+{{url_for('index')}}
+<!-- / -->
+<hr>
+{{url_for('user',name='user1')}}
+<!-- /user/user1 -->
+<hr>
+{{url_for('user',name='abc',page=10)}}
+<!-- /user/abc?page=10 -->
+<hr>
+{{url_for('test_urlfor')}}
+<!-- /url_for -->
+<hr>
+{{url_for('test_urlfor',_external=True)}}
+<!-- http://127.0.0.1:5000/url_for -->
+<hr>
+{{url_for('test_urlfor', name='john', page=2, version=1)}}
+<!-- /url_for?name=john&page=2&version=1 -->
+<hr>
+{{url_for('test_urlfor',_external=True, name='john', page=2, version=1)}}
+<!-- http://127.0.0.1:5000/url_for?name=john&page=2&version=1 -->
+
 <!-- practice end -->

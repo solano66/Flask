@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 
 app = Flask(__name__)
@@ -12,6 +12,10 @@ def user(name):
     return render_template('delimiters.html')
 
 #----------practice start------------
+@app.route('/url_for')
+def test_urlfor():
+    print(app.url_map)
+    return render_template('url_for(practice).html')
 
 #----------practice end-------------- 
 

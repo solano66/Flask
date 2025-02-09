@@ -6,6 +6,10 @@ app = Flask(__name__)
 
 
 #----------practice start------------
+@app.route('/')
+def index():
+    return render_template("include(practice).html", page_header="include")
+
 #----------practice end-------------- 
 
 
